@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projektarbeit mit PHP: Hauptseite</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projektarbeit mit PHP
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('index.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Projektarbeit mit PHP Dokumentation</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2>Inhalt</h2>
+<ul>
+<li><a href="#Dokumentation">Über diese Dokumentation</a></li>
+<li><a href="#Beschreibung">Projektbeschreibung</a></li>
+<li><a href="#Implementation">Implementation</a></li>
+<li><a href="#Opt">Fehlerprüfung, Anfälligkeit und Optimierung</a></li>
+</ul>
+<h2><a class="anchor" id="Dokumentation"></a>Über diese Dokumentation</h2>
+<p>Diese Dokumentation habe ich mir der Software "Doxygen" generiert, welches ein bevorzugtes Werkzeug in der Software-Entwicklung ist.<br />
+Sie können hier alle erfassten Quellcode-Dateien, individuelle Variablen sowie Funktionen, inklusiver Beschreibung einsehen.<br />
+Wenn Sie sich den Quellcode ausserhalb dieses Dokuments anschauen, werden sie einen der Kommentar-Stile sehen, welcher für diese Dokument-Generierung benötigt wurde.<br />
+ </p><h2><a class="anchor" id="Beschreibung"></a>Projektbeschreibung</h2>
+<p>Dieses Projekt bildet einen Umschulungsfach-Manager, indem dort angemeldete Benutzer individuelle Fächer und dazu passende Einträge erstellen können.<br />
+Nach mindestens 4 Projektanläufen habe Ich entschieden, das ich solch ein Projekt umsetzen möchte, welches die gewünschten Vorgaben etwas unkonventionell erfüllt.<br />
+Wenn der Benutzer das erste mal die Seite aufruft, sieht er auf der rechten Seite die bislang angelegten Fächer und daneben die letzten drei Einträge, welche getätigt wurden.<br />
+Optional kann Er alle anderen Einträge, durch das Feld darunter, einblenden lassen.<br />
+Desweiteren hat der Benutzer hat die Möglichkeit ein Konto anzulegen und selbst Fächer, sowie Einträge zu erstellen.<br />
+<br />
+ Ich weiß diese Projektarbeit übertrieben groß ist, doch ich wollte nach 1 1/2 Jahren wieder meine PHP-Kenntnisse mit einem<br />
+ "Pseudo-Richtigen" Projekt auffrischen und wieweit ich ein flexibles, dynamisches Gerüst auf die Schnelle erstellen kann, ohne auf andere Technologien<br />
+ ausser einfachem PHP, HTML und CSS setzen zu können.<br />
+<br />
+<em>Alexander Petrasovics</em></p>
+<h2><a class="anchor" id="Implementation"></a>Implementation</h2>
+<p>Die Webseite wird nicht über einfache Links, sondern direkt über Serveranfragen gesteuert. Der gesamte Inhalt der Webseite ist modular aufgebaut.</p><ul>
+<li>Kopfteil einbinden</li>
+<li>Datei basierend auf der Anfrage einbinden</li>
+<li>Fussteil einbinden <br />
+<br />
+Grundsätzlich wird bei jeder Anfrage die "index.php" und die Datei "requestHandler.inc.php" eingebunden und eine Datenbankfunktion erstellt.<br />
+Der <em>Request Handler</em> entscheidet über die auszuführende Aktion, basierend auf den übermittelten Daten der HTML-Formen und ruft die nötigen<br />
+Funktionen in der Datei "request.func.php" auf, welche jede nötige Funktion beinhaltet.<br />
+<br />
+ <h2><a class="anchor" id="Opt"></a>Fehlerprüfung, Anfälligkeit und Optimierung</h2>
+</li>
+</ul>
+<p>In der Datei "config.inc.php" befindet sich eine Konstante names 'DEBUG', welche Zur Fehlerausgabe genutzt wurde\ und fuer die Release-Version deaktiviert wurde.<br />
+Fehler habe ich minimiert und auch die Eingabefelder sind in HTML bei fehlenden Angaben deaktiviert.<br />
+Allerdings habe ich nach zig Projektanläufen und dem Lernen anderer Umschulungsfächer keinen <em>Bock</em> mehr gehabt!<br />
+Sorry Fr. Becker :( <br />
+ </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

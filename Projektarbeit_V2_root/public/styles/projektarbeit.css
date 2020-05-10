@@ -1,0 +1,350 @@
+
+/* Fuer das gesamte Dokument werden Aussen-/Innenabstaende zurueckgesetzt! */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Grundfarben sind vorderfiniert */
+:root {
+  --lighter: #C2D0DE;
+	--light: #7793AE;
+	--middle: #9DB3C8;
+	--dark: #587999;
+	--darker: #3E6386; 
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: var(--light);	
+}
+
+.warning {
+	background: red;
+	text-align: center;	
+}
+
+header {
+	text-align: center;
+}
+
+.header-cap {
+	float: left;
+	margin-left: 3%;
+}
+.header-cap h1::after {
+	font-size: 0.5em;
+	content: 'Fiae Gruppe 2';	
+	display: inline-block;
+	position: relative;
+	left: 3%;
+	font-weight: lighter;
+	
+}
+
+.box-header-login {
+	padding: 1em;
+	float: right;
+}
+
+.box-header-login div {	
+	display: inline;
+}
+
+.box-header-login input {
+	float: right;	
+}
+
+.box-header-login input[type=text],[type=password] {
+	text-align: center;
+	width: 25%;	
+	margin-left: 1%;
+	min-height: 2em;
+}
+
+.box-header-login input[type=submit] {
+	min-height: 2em;
+	margin-right: 1%;
+	margin-left: 1%;
+	background: var(--darker);
+	color: var(--lighter);
+	border: 0;	
+}
+
+.box-header-login input[type=submit]:hover {
+	background: var(--middle);
+	color: var(--darker);
+}
+
+.box-header-nav {
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.box-header-nav span {
+	display: inline-block;	
+}
+
+.box-header-nav input {
+	height: 2em;
+	font-size: 1.0rem;
+	letter-spacing: 0.1rem;
+	margin: 1%;		
+	border: solid 1px var(--darker);
+	background: var(--middle);	
+	cursor: pointer;	
+}
+
+.box-header-nav input:hover {
+	color: var(--lighter);
+	background: var(--dark);
+	
+}
+
+.box-header-user {
+	float: right;
+	margin-top: 1%;
+	margin-right: 2%;
+}
+
+.box-header-user span {
+	display: inline-block;
+}
+
+.box-header-user input {
+	border: solid 1px green;
+	background: lightgreen;
+	font-weight: bold;
+	padding: 5%;
+}
+
+main {
+	text-align: center;
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.box-left {
+	flex: 1;	
+	margin-left: 0;
+	margin-right: 1%; 		
+	/*background-image: linear-gradient( to bottom, var(--light), var(--lighter), var(--light ) );*/
+	/*background-image: linear-gradient( to right,var(--middle), var(--light ) );*/	
+}
+
+.box-left ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.box-left input {
+	width: 80%;
+	height: 2em;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	margin-top: 3%;
+	border: solid 1px var(--darker);
+	background: var(--middle);
+}
+
+.box-left input:hover:not([type = text]) {
+	cursor: pointer;
+	color: var(--lighter);
+	background: var(--dark);
+	transition-duration: 0.3s;
+}
+
+.box-left .input_subject {
+	border: 0;
+	border-bottom: solid 0.1rem gray;
+	text-align: center;
+	background: var(--lighter);
+	
+}
+.box-left .input_subject:hover {
+  background: white;
+}
+.box-left .input_subject:focus {
+	background: white;
+	border: solid 0.1rem gray;
+}
+
+.box-center {
+	flex: 3;
+ 	margin-top: 1%; 
+	
+  padding: 1%; 
+	/*border: solid 1px blue; */
+	border-bottom: 0;
+	background-image: linear-gradient(to right, var(--light), var(--lighter));
+	
+}
+ 
+/* Eintragsfelder */
+
+.box-content-entry {
+	display: block;
+	margin-bottom: 3%;
+	margin-right:  1%;
+	padding: 1%;
+	background: var(--lighter);	
+}
+
+.box-content-entry:nth-child(even) {	
+  background: var(--middle);	
+}
+
+.box-content-entry:nth-child(odd) {	
+	background: var(--dark);	
+}
+
+.box-content-entry .entry-header .entry-header-caption {
+	display: inline-block;
+	margin-right: 1%;
+	margin-left: 3%;
+	font-weight: bold;
+}
+
+.box-content-entry .entry-header {
+	margin-top: 1%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: row;	
+}
+
+.box-content-entry .entry-header span {
+	flex: 1;	
+	text-align: left;		
+}
+
+.box-content-entry .entry-header span:nth-last-child(1) {
+	flex: 1;
+	text-align: right;
+}
+
+
+.box-content-entry .entry-header span input {
+	height: 100%;
+	background: var(--lighter);
+	color: var(--darker);
+	border: solid 1px var(--light);	
+	text-align: center;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.box-content-entry .editable  {
+	background: white;
+}
+
+.box-content-entry textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1%;
+  font-family: "Times New Roman", Times, serif;
+	background: wheat;
+	resize: vertical;	
+}
+
+/** end */
+
+.box-center-table-subjects {
+	display: grid;
+	width: 50%;
+	margin-left: 25%;
+  grid-template-columns: 3fr 2fr;	
+}
+
+.box-center-table-subjects span {
+	margin: 1%;	
+}
+
+.box-center-table-subjects input {	
+	min-height: 100%;	
+	text-align: center;
+}
+
+.box-center-table-subjects input[type = submit] {
+	background: orange;
+	color: white;
+	font-weight: bold;
+	border: solid 2px var(--middle);
+	border: solid 1px;
+	float: left;
+}
+
+.box-center-table-subjects input[type = submit]:hover {
+	background: red;
+	color: black;
+	cursor: pointer;
+	
+}
+
+.box-center-section-entries-dropdown {
+	margin: 2%;	
+}
+
+.box-center-section-entries-dropdown a {
+  border-bottom: solid 2px var(--dark);	
+	border-top: solid 2px var(--dark);	
+}
+
+.box-center-section-entries-dropdown a:visited {
+	color: var(--darker);	
+}
+
+.box-center-section-entries-dropdown a:link {
+	text-decoration: none;	
+}
+
+
+.box-center-section-entries-expand {
+	display: none;
+}
+
+.box-center-section-entries-expand:target {
+	display: block;
+}
+
+
+.box-center-table-create-account {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin-top: 5%;
+	margin-left: 25%;	
+}
+
+.box-center-table-create-account input {
+	height: 2.5rem;	
+	width: 80%;
+	text-align: center;
+	margin: 1%;	
+	width: 100%;
+}
+
+.box-center-table-create-account input[type = submit] {
+	background: var(--dark);
+	color: var(--lighter);
+	font-weight: bold;
+	border: 0;	
+	cursor: pointer;
+}
+
+.box-center-table-create-account input[type = submit]:hover {
+	background: var(--middle);
+	color: var(--dark);
+}
+
+footer {
+	text-align: center;
+	flex-shrink: 0;
+	background-image: linear-gradient( to right,var(--middle), var(--light ) );
+}
+

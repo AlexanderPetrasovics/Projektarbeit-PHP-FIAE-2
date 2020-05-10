@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projektarbeit mit PHP: index.php Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projektarbeit mit PHP
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('index_8php_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">index.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="index_8php.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;require_once <span class="stringliteral">&#39;./configs/config.inc.php&#39;</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;require_once <a class="code" href="config_8inc_8php.html#a5276b98328cbc46b2a8575baceaa3e42">FUNCTIONS</a> . <span class="stringliteral">&#39;helpers.func.php&#39;</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;require_once <a class="code" href="config_8inc_8php.html#a5276b98328cbc46b2a8575baceaa3e42">FUNCTIONS</a> . <span class="stringliteral">&#39;SQL.func.php&#39;</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">   22</a></span>&#160;<a class="code" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a> = <a class="code" href="SQL_8func_8php.html#a8f84d74d0c60c6a48d4be43c605fb2c9">database</a>();    <span class="comment">// $db ist eine Funktion und haelt das Datenbankobjekt inne!</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordflow">if</span>( !<a class="code" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a> &amp;&amp; !<a class="code" href="config_8inc_8php.html#a758c150b67e476ecf77478f16b387c61">DEBUG</a> ) {    <span class="comment">// Konnte keine Datenbankfunktion erstellt werden, gib das error template aus.</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    require_once <a class="code" href="config_8inc_8php.html#a99dad586716e3f05de84007ce823e714">TEMPLATES</a> . <span class="stringliteral">&#39;error/error.tpl.php&#39;</span>; </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="keywordflow">else</span> {                  <span class="comment">// Hat wohl alles geklappt - RequestHandler, Kopfteil, Hauptseite und footer laden     </span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    require_once <span class="stringliteral">&#39;./requestHandler.inc.php&#39;</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    require_once <a class="code" href="config_8inc_8php.html#a99dad586716e3f05de84007ce823e714">TEMPLATES</a> . <span class="stringliteral">&#39;header/header.tpl.php&#39;</span>;       <span class="comment">// HTML Kopfteil einbinden        </span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    $query_entries  =  <span class="stringliteral">&quot;select entry.id, text, entry.time_created as timestamp, name as subjectName, users.username as username &quot;</span> . </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="stringliteral">&quot;from entry inner join subject on subject.id = subjectID left join users on entry.userID = users.id order by timestamp desc&quot;</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    $query_subjects =   <span class="stringliteral">&quot;select id, name from subject&quot;</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* Faecher und alle Eintraege werden zu Beginn in die Session geladen und in dem template der &quot;news&quot;-Seite genutzt genutzt */</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    $_SESSION[<span class="stringliteral">&quot;database&quot;</span>][<span class="stringliteral">&quot;subjects&quot;</span>]       = <a class="code" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a>( <span class="stringliteral">&#39;sql_query&#39;</span>, $query_subjects, <span class="keyword">true</span>, null );</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    $_SESSION[<span class="stringliteral">&quot;database&quot;</span>][<span class="stringliteral">&quot;entries_all&quot;</span>]    = <a class="code" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a>( <span class="stringliteral">&#39;sql_query&#39;</span>, $query_entries, <span class="keyword">true</span>, null );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    require_once <a class="code" href="config_8inc_8php.html#a99dad586716e3f05de84007ce823e714">TEMPLATES</a> . <span class="stringliteral">&#39;landing/landing.tpl.php&#39;</span>;  <span class="comment">// HTML Hauptseite einbinden    </span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    require_once <a class="code" href="config_8inc_8php.html#a99dad586716e3f05de84007ce823e714">TEMPLATES</a> . <span class="stringliteral">&#39;/footer/footer.tpl.php&#39;</span>;   <span class="comment">// HTML Fussbereich einbinden</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a>( <span class="stringliteral">&#39;sql_close&#39;</span>, null, null, null );               <span class="comment">// Explizit die Datenbankverbindung schliessen</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;?&gt;</div><div class="ttc" id="index_8php_html_ae123d7ab7c1ac2509f7866b13fd3c589"><div class="ttname"><a href="index_8php.html#ae123d7ab7c1ac2509f7866b13fd3c589">$db</a></div><div class="ttdeci">$db</div><div class="ttdef"><b>Definition:</b> <a href="index_8php_source.html#l00022">index.php:22</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a99dad586716e3f05de84007ce823e714"><div class="ttname"><a href="config_8inc_8php.html#a99dad586716e3f05de84007ce823e714">TEMPLATES</a></div><div class="ttdeci">const TEMPLATES(DEBUG)</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00024">config.inc.php:24</a></div></div>
+<div class="ttc" id="SQL_8func_8php_html_a8f84d74d0c60c6a48d4be43c605fb2c9"><div class="ttname"><a href="SQL_8func_8php.html#a8f84d74d0c60c6a48d4be43c605fb2c9">database</a></div><div class="ttdeci">database()</div><div class="ttdoc">Erstellt eine Datenbankfunktion, welche bei erfolgreicher Datenbankobjekt-erstellung  als Parameter e...</div><div class="ttdef"><b>Definition:</b> <a href="SQL_8func_8php_source.html#l00014">SQL.func.php:14</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a758c150b67e476ecf77478f16b387c61"><div class="ttname"><a href="config_8inc_8php.html#a758c150b67e476ecf77478f16b387c61">DEBUG</a></div><div class="ttdeci">const DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00012">config.inc.php:12</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a5276b98328cbc46b2a8575baceaa3e42"><div class="ttname"><a href="config_8inc_8php.html#a5276b98328cbc46b2a8575baceaa3e42">FUNCTIONS</a></div><div class="ttdeci">const FUNCTIONS</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00027">config.inc.php:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index_8php.html">index.php</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

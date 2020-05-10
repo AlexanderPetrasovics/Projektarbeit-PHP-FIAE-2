@@ -1,0 +1,17 @@
+Das Projekt wurde zwar ausschliesslich unter Linux entwickelt,
+Doch ich habe alles unter einer Windows 10 VM mit einer frischen XAMPP-Installation getestet.
+
+Ordner:
+	Datenbank -> Hier liegt der Export der Datenbank aus PHPMyAdmin.
+
+	Bitte beachten Sie, das die Datenbank "Projektarbeit" heissen muss!
+	Alternativ koennen sie in der php-Datei: "configs/config.inc.php"
+	von Hand eine andere Bezeichnung angeben.
+
+	Projektarbeit_V2_root -> Dies ist das root-Verzeichnis von dem geladen werden muss.
+
+	Dokumentation -> Eine ausfuehrlich Dokumentation als HTML.
+
+Danke fuers lesen! :D
+
+
